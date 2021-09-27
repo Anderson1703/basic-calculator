@@ -1,0 +1,75 @@
+body{
+    background: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.calculadora{
+    display: flex;
+    flex-direction: column;
+    min-width: max-content;
+    height: 70vh;
+    border: 2px solid blue;
+    margin: 50px auto;
+    padding: 3px;
+    max-height: min-content;
+    min-height: max-content;
+    width: 500px;
+}
+
+.pantalla{
+    margin: 3px;
+    display: flex;
+    padding: 15px;
+    height: 30%;
+    border: 1px solid green;
+    align-items: center;
+    justify-content:flex-end;
+    border-radius: 12px;
+}
+
+.cajaBotones{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30px, 75px));
+    grid-column: auto;
+    grid-gap: 5px;
+    height: 100%;
+    padding: 10px;
+    height: 70%
+    
+}
+
+.botones{
+   border-radius: 12px;
+   border: 1px solid blue;
+   background: transparent;
+   color: white;
+}
+
+.botones:hover{
+    background: blue;
+    cursor: pointer;
+}
+.operaciones{
+    border: 1px solid green;
+    background: transparent;
+    color: white;
+}
+
+.operaciones:hover{
+    background: green;
+    cursor: pointer;
+}
+
+.primerValor,
+.cajaOperacion,
+.segundoValor,
+.cajaIgual,
+.resultado{
+    margin: 3px;
+    max-width: min-content;
+    padding: 3px;
+    border-radius: 8px;
+    font-size: 25px;
+    color: white;
+}
+
